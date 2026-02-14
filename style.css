@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #ff4e8a, #ff9a9e);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: white;
+        touch-action: none;
+}
+
+h1 {
+        font-size: 2.5rem;
+        animation: glow 1.5s infinite alternate;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px #fff; }
+        to { text-shadow: 0 0 25px #ff0066; }
+    }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.container .tenor-gif-embed {
+  max-width: 200px;
+}
+
+.container .btn {
+  display: flex;
+  gap: 25px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #111;
+  background: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+#yesBtn {
+        background-color: #ffffff;
+        color: #ff0066;
+        font-weight: bold;
+    }
+
+
+
+.heart {
+        position: absolute;
+        color: rgba(255,255,255,0.7);
+        font-size: 20px;
+        animation: float 3s linear infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(100vh); opacity: 0; }
+        50% { opacity: 1; }
+        100% { transform: translateY(-10vh); opacity: 0; }
+    }
+
+    .balloon {
+        position: absolute;
+        width: 40px;
+        height: 50px;
+        background-color: red;
+        border-radius: 50% 50% 45% 45%;
+        animation: balloonFloat 4s linear infinite;
+    }
+
+    @keyframes balloonFloat {
+        0% { transform: translateY(100vh); }
+        100% { transform: translateY(-120vh); }
+    }
+
+    @media (max-width: 600px) {
+        h1 { font-size: 1.8rem; }
+        button { font-size: 16px; padding: 10px 20px; }
+    }
+
+    #move-random {
+  transition: left 0.05s linear, top 0.05s linear;
+}
+
+.main1-gif {
+  width: 220px;      /* make smaller (adjust as you like) */
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.main2-gif {
+  width: 220px;      /* make smaller (adjust as you like) */
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+}
